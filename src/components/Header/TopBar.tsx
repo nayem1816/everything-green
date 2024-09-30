@@ -6,8 +6,8 @@ import SocialImage from "../Common/SocialImage";
 
 const TopBar = () => {
   return (
-    <div className="bg-secondary text-primary container h-[90px] md:h-[40px] grid md:flex md:items-center justify-between ">
-      <div className="mail flex items-center gap-2">
+    <div className="bg-secondary text-primary container md:h-[40px] my-4 md:my-0 md:flex items-center justify-between">
+      <div className="flex items-center gap-2 mb-3 md:mb-0">
         <Image
           className="w-5 h-5"
           src={MailImage}
@@ -15,13 +15,13 @@ const TopBar = () => {
           width={16}
           height={16}
         />
-        <Link
+        <a
           href="mailto:contact@concinnitylimited.com"
           className="text-[14px] font-bold inline-block">
           contact@concinnitylimited.com
-        </Link>
+        </a>
       </div>
-      <div className="socials flex items-center gap-3">
+      <div className="flex items-center gap-3 mt-0">
         <p className="text-[14px] font-bold">Follow us: </p>
         <div className="flex items-center gap-2">
           <SocialImage />
