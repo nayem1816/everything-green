@@ -2,8 +2,8 @@ import React from "react";
 
 const LetsTalk = () => {
   return (
-    <div className="py-20">
-      <div className="container text-tertiary px-80">
+    <div className="py-16">
+      <div className="container text-tertiary md:px-80">
         <h2 className="font-bold text-2xl md:text-3xl lg:text-6xl text-center text-primary md:px-32 font-dmSerif">
           Let’s talk About Data Architecture
         </h2>
@@ -16,7 +16,7 @@ const LetsTalk = () => {
         </p>
         {/* make a button */}
         <div className="flex justify-center mt-8">
-          <button className="bg-primary text-white px-20 py-4 rounded-xl text-2xl">
+          <button className="bg-primary text-white px-20 py-3 rounded-xl text-xl md:text-2xl">
             Let’s Talk
           </button>
         </div>
