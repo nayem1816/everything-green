@@ -16,7 +16,7 @@ import { Autoplay, EffectFade } from "swiper/modules";
 
 const BannerSlider = () => {
   const handlePush = () => {
-    window.scrollTo({ top: window.innerHeight, behavior: "smooth" });
+    window.scrollTo({ top: window.innerHeight + 200, behavior: "smooth" });
   };
 
   return (
