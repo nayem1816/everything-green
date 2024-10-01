@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Logo from "/src/assets/images/logo.png.webp";
 import Image from "next/image";
@@ -55,14 +55,32 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isSubOpenLevel2, setIsSubOpenLevel2] = useState(false);
   const [isSubOpenLevel3, setIsSubOpenLevel3] = useState(false);
+  const [navbarScroll, setNavbarScroll] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  const handelScroll = () => {
+    if (window.scrollY >= 100) {
+      setNavbarScroll(true);
+    } else {
+      setNavbarScroll(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handelScroll);
+    return () => {
+      window.removeEventListener("scroll", handelScroll);
+    };
+  }, []);
+
   return (
-    <nav className=" bg-black">
-      <div className="container text-white py-3">
+    <nav
+      className={`absolute z-50 w-full py-5
+    ${navbarScroll ? "bg-black" : "bg-transparent"}
+    `}>
+      <div className={`container text-white py-3`}>
         <div className="flex justify-between items-center">
           <div className="text-2xl font-bold">
             <Link href="/">

@@ -4,6 +4,7 @@ import TopBar from "@/components/Header/TopBar";
 import TopFooter from "@/components/Footer/TopFooter";
 import BottomFooter from "@/components/Footer/BottomFooter";
 import Navbar from "@/components/Header/Navbar";
+import BannerSlider from "@/components/Home/BannerSlider";
 
 export const metadata: Metadata = {
   title: "SEO Expert in Hong Kong | SEO Service Provider | Concinnity Limited",
@@ -18,9 +19,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={` antialiased`}>
-        <TopBar />
-        <Navbar />
+      <body className={`antialiased`}>
+        <div className="fixed top-0 w-full z-50">
+          <TopBar />
+        </div>
+        <div className="fixed top-[40px] w-full z-[999]">
+          <Navbar />
+        </div>
+        <div className="">
+          <BannerSlider />
+        </div>
         <div className="">{children}</div>
         <TopFooter />
         <BottomFooter />

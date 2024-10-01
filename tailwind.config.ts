@@ -22,6 +22,10 @@ const config: Config = {
         secondary: "#FFFFFF",
         tertiary: "#000000",
       },
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],
+        dmSerif: ["DM Serif Display", "serif"],
+      },
     },
   },
   plugins: [],
