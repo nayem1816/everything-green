@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import TopBar from "@/components/Header/TopBar";
-import TopFooter from "@/components/Footer/TopFooter";
 import BottomFooter from "@/components/Footer/BottomFooter";
 import Navbar from "@/components/Header/Navbar";
 import BannerSlider from "@/components/Home/BannerSlider";
