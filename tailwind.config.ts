@@ -26,6 +26,10 @@ const config: Config = {
         sans: ["Inter", "sans-serif"],
         dmSerif: ["DM Serif Display", "serif"],
       },
+      boxShadow: {
+        "top-bottom":
+          "0 -10px 20px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.1)",
+      },
     },
   },
   plugins: [],

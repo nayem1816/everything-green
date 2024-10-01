@@ -2,7 +2,7 @@ import React from "react";
 
 const TopNotch = () => {
   return (
-    <div className="py-16">
+    <div className="py-20">
       <div className="container text-tertiary">
         <h2 className="font-bold text-2xl md:text-4xl lg:text-6xl text-center">
           Where topnotch <br /> <span className="text-primary">marketing</span>{" "}
