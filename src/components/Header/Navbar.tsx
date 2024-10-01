@@ -77,8 +77,8 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`absolute z-50 w-full py-5
-    ${navbarScroll ? "bg-black" : "bg-transparent"}
+      className={`md:absolute z-50 w-full py-5 bg-black md:bg-transparent
+    ${navbarScroll ? "md:bg-black" : null}
     `}>
       <div className={`container text-white py-3`}>
         <div className="flex justify-between items-center">

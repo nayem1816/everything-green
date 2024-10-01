@@ -38,11 +38,17 @@ const BannerSlider = () => {
               height={500}
             />
             <div className="absolute top-0 left-0 w-full h-full flex items-center justify-start bg-black bg-opacity-50 z-10">
-              <h2 className="text-secondary container xl:text-[120px] lg:text-[80px] md:text-[60px] text-[28px] leading-thin md:leading-none font-bold font-dmSerif mt-7 md:mt-0">
+              <h2 className="text-secondary container xl:text-[120px] lg:text-[80px] md:text-[60px] text-[28px] leading-thin md:leading-none font-bold font-dmSerif mt-7 md:mt-0 hidden md:block">
                 Digital <br /> <span className="text-primary">Marketing</span>{" "}
                 <br />
                 That Goes <br />
                 <span className="text-primary">Beyond Rankings</span>
+              </h2>
+
+              <h2 className="text-secondary container text-[28px] leading-thin md:leading-none font-bold font-dmSerif block  md:hidden">
+                Digital <span className="text-primary">Marketing</span> That
+                Goes
+                <span className="text-primary"> Beyond Rankings</span>
               </h2>
             </div>
           </div>
@@ -57,11 +63,16 @@ const BannerSlider = () => {
               height={500}
             />
             <div className="absolute top-0 left-0 w-full h-full flex items-center justify-start bg-black bg-opacity-50">
-              <h2 className="text-secondary container xl:text-[120px] lg:text-[80px] md:text-[60px] text-[28px] leading-thin md:leading-none font-bold font-dmSerif mt-7 md:mt-0">
+              <h2 className="text-secondary container xl:text-[120px] lg:text-[80px] md:text-[60px] text-[28px] leading-thin md:leading-none font-bold font-dmSerif mt-7 md:mt-0 hidden md:block">
                 Let’s <br /> <span className="text-primary">Jumpstart</span>{" "}
                 <br />
                 Your Digital <br />
                 <span className="text-primary">Growth!</span>
+              </h2>
+              <h2 className="text-secondary container text-[28px] leading-thin md:leading-none font-bold font-dmSerif block md:hidden">
+                Let’s <span className="text-primary">Jumpstart</span> Your
+                Digital
+                <span className="text-primary"> Growth!</span>
               </h2>
             </div>
           </div>
@@ -76,18 +87,22 @@ const BannerSlider = () => {
               height={500}
             />
             <div className="absolute top-0 left-0 w-full h-full flex items-center justify-start bg-black bg-opacity-50">
-              <h2 className="text-secondary container xl:text-[120px] lg:text-[80px] md:text-[60px] text-[28px] leading-thin md:leading-none font-bold font-dmSerif mt-7 md:mt-0">
+              <h2 className="text-secondary container xl:text-[120px] lg:text-[80px] md:text-[60px] text-[28px] leading-thin md:leading-none font-bold font-dmSerif mt-7 md:mt-0 hidden md:block">
                 Where <br /> <span className="text-primary">marketing</span>{" "}
                 <br />
                 meets <br />
                 <span className="text-primary">tech</span>
+              </h2>
+              <h2 className="text-secondary container xl:text-[120px]  text-[28px] leading-thin md:leading-none font-bold font-dmSerif block md:hidden">
+                Where <span className="text-primary">marketing</span> meets
+                <span className="text-primary"> tech</span>
               </h2>
             </div>
           </div>
         </SwiperSlide>
       </Swiper>
 
-      <div className="absolute inset-x-0 flex justify-center z-50 -mt-28">
+      <div className="absolute inset-x-0 flex justify-center z-50 -mt-14 md:-mt-28">
         <button onClick={() => handlePush()} className="">
           <Image
             className="w-6 h-6 cursor-pointer"

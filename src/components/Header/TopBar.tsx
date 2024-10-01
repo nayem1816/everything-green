@@ -7,7 +7,7 @@ import SocialImage from "../Common/SocialImage";
 const TopBar = () => {
   return (
     <div className="bg-secondary">
-      <div className=" text-primary container md:h-[40px] my-4 md:my-0 md:flex items-center justify-between">
+      <div className=" text-primary container md:h-[40px] md:my-0 md:flex items-center justify-between py-4 md:py-0">
         <div className="flex items-center gap-2 mb-3 md:mb-0">
           <Image
             className="w-5 h-5"

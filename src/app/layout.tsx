@@ -20,10 +20,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`antialiased`}>
-        <div className="fixed top-0 w-full z-50">
+        <div className="md:fixed top-0 w-full z-50">
           <TopBar />
         </div>
-        <div className="fixed top-[40px] w-full z-[999]">
+        <div className="md:fixed top-[40px] w-full z-[999]">
           <Navbar />
         </div>
         <div className="">
