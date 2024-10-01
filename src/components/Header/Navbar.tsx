@@ -187,7 +187,7 @@ const Navbar = () => {
         {isOpen && (
           <div className="md:hidden mt-1 space-y-6 bg-[#1A1A1A] text-center py-3">
             {navData.map((item, index) => (
-              <div className="relative group">
+              <div key={index} className="relative group">
                 <Link
                   key={index}
                   href={item.link}
