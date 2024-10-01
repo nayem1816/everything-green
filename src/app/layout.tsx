@@ -30,7 +30,6 @@ export default function RootLayout({
           <BannerSlider />
         </div>
         <div className="">{children}</div>
-        <TopFooter />
         <BottomFooter />
       </body>
     </html>
