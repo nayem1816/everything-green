@@ -1,5 +1,6 @@
 import CaseStudy from "@/components/Home/CaseStudy";
 import DigitalMarketing from "@/components/Home/DigitalMarketing";
+import LetsTalk from "@/components/Home/LetsTalk";
 import OurClients from "@/components/Home/OurClients";
 import OurServices from "@/components/Home/OurServices";
 import SeoServices from "@/components/Home/SeoServices";
@@ -14,6 +15,7 @@ export default function Home() {
       <CaseStudy />
       <DigitalMarketing />
       <OurClients />
+      <LetsTalk />
     </div>
   );
 }
